@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://yc77shm6miax"]
+
+[ext_resource type="Script" path="res://game/upgrades/upgrade.gd" id="1_557oq"]
+
+[resource]
+script = ExtResource("1_557oq")
+health = 0
+damage = 0
+speed = 0.0
+attack_speed = 0.0

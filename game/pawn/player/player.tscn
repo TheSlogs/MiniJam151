@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmd0x1ht5uvft"]
+
+[ext_resource type="Script" path="res://game/pawn/player/player.gd" id="1_ap1lj"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ap1lj")
