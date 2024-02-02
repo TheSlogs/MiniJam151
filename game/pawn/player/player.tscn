@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dmd0x1ht5uvft"]
+[gd_scene load_steps=4 format=3 uid="uid://dmd0x1ht5uvft"]
 
 [ext_resource type="Script" path="res://game/pawn/player/player.gd" id="1_ap1lj"]
+[ext_resource type="Texture2D" uid="uid://cafbwrugyndhu" path="res://Assets/GoodDragon.png" id="2_7x86i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8xn1j"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_ap1lj")
+speed = 100.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_8xn1j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("2_7x86i")
+
+[node name="Mouth" type="Node2D" parent="."]
+position = Vector2(17, 0)
