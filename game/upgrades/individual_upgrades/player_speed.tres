@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://lcwsmcf8l5sq"]
+
+[ext_resource type="Script" path="res://game/upgrades/upgrade.gd" id="1_h7sxi"]
+
+[resource]
+script = ExtResource("1_h7sxi")
+type = 1
+health = 0
+damage = 0
+speed = 25.0
+attack_speed = 0.0
+projectile_speed = 0.0
+title = "Player Speed"
+desc = "Increases player move speed"

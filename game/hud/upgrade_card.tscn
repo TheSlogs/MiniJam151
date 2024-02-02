@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://bk1jpk1q6y1ac"]
+
+[ext_resource type="Texture2D" uid="uid://dwlmnhi56nx1t" path="res://icon.svg" id="1_6co0s"]
+[ext_resource type="Script" path="res://game/hud/upgrade_card.gd" id="2_8uh3l"]
+
+[node name="UpgradeCard" type="Button" node_paths=PackedStringArray("title", "desc")]
+offset_right = 311.0
+offset_bottom = 119.0
+size_flags_horizontal = 6
+size_flags_vertical = 6
+icon = ExtResource("1_6co0s")
+script = ExtResource("2_8uh3l")
+title = NodePath("VBoxContainer/Title")
+desc = NodePath("VBoxContainer/Description")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = -25.0
+offset_right = 44.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Title"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Description" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Description"
+horizontal_alignment = 1
+autowrap_mode = 2

@@ -7,11 +7,16 @@
 radius = 4.12311
 
 [node name="Projectile" type="Area2D"]
+collision_layer = 12
+collision_mask = 15
 script = ExtResource("1_jpro7")
-speed = 50.0
+speed = 150.0
+damage = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_jcfdd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ovpvk")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

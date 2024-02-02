@@ -1,0 +1,120 @@
+[gd_scene load_steps=15 format=3 uid="uid://x7737r1a7jyj"]
+
+[ext_resource type="Script" path="res://game/hud/hud.gd" id="1_v804g"]
+[ext_resource type="Resource" uid="uid://yc77shm6miax" path="res://game/upgrades/greedy_upgrade.tres" id="2_fvdox"]
+[ext_resource type="Resource" uid="uid://cefrsus1dluwv" path="res://game/upgrades/individual_upgrades/greedy_damage.tres" id="3_vyvqq"]
+[ext_resource type="Resource" uid="uid://dju0je3mkgp3j" path="res://game/upgrades/player_upgrade.tres" id="3_x5n5v"]
+[ext_resource type="Resource" uid="uid://dv2hxatxjx46t" path="res://game/upgrades/individual_upgrades/greedy_attack_speed.tres" id="4_pm06u"]
+[ext_resource type="Resource" uid="uid://c0kjfhw8jy7qu" path="res://game/upgrades/individual_upgrades/player_damage.tres" id="4_q7mf5"]
+[ext_resource type="Resource" uid="uid://bmmeh526l7elr" path="res://game/upgrades/individual_upgrades/greedy_health.tres" id="6_adl4f"]
+[ext_resource type="Resource" uid="uid://ccvoruhcsqe1n" path="res://game/upgrades/individual_upgrades/greedy_proj_speed.tres" id="7_dck5x"]
+[ext_resource type="Resource" uid="uid://bb0qv1hk562sc" path="res://game/upgrades/individual_upgrades/greedy_speed.tres" id="8_fnn74"]
+[ext_resource type="Resource" uid="uid://bvjhb2uxos0h4" path="res://game/upgrades/individual_upgrades/player_attack_speed.tres" id="9_qjwa2"]
+[ext_resource type="Resource" uid="uid://bkxrfoluy03ut" path="res://game/upgrades/individual_upgrades/player_health.tres" id="11_waiqo"]
+[ext_resource type="Resource" uid="uid://d1rs7d0r4k545" path="res://game/upgrades/individual_upgrades/player_proj_speed.tres" id="12_rnfvo"]
+[ext_resource type="Resource" uid="uid://lcwsmcf8l5sq" path="res://game/upgrades/individual_upgrades/player_speed.tres" id="13_5ewkb"]
+[ext_resource type="PackedScene" uid="uid://bk1jpk1q6y1ac" path="res://game/hud/upgrade_card.tscn" id="14_gxweo"]
+
+[node name="Hud" type="Control" node_paths=PackedStringArray("upgrade_container", "card1", "card2", "card3")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v804g")
+upgrade_container = NodePath("UpgradeContainer")
+card1 = NodePath("UpgradeContainer/UpgradeCard")
+card2 = NodePath("UpgradeContainer/UpgradeCard2")
+card3 = NodePath("UpgradeContainer/UpgradeCard3")
+greedy_upgrade = ExtResource("2_fvdox")
+player_upgrade = ExtResource("3_x5n5v")
+upgrade_array = Array[Resource("res://game/upgrades/upgrade.gd")]([ExtResource("4_pm06u"), ExtResource("3_vyvqq"), ExtResource("6_adl4f"), ExtResource("7_dck5x"), ExtResource("8_fnn74"), ExtResource("9_qjwa2"), ExtResource("4_q7mf5"), ExtResource("11_waiqo"), ExtResource("12_rnfvo"), ExtResource("13_5ewkb")])
+metadata/_edit_use_anchors_ = true
+
+[node name="UpgradeContainer" type="HBoxContainer" parent="."]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -64.0
+offset_right = 196.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UpgradeCard" parent="UpgradeContainer" instance=ExtResource("14_gxweo")]
+layout_mode = 2
+upgrade = ExtResource("3_vyvqq")
+
+[node name="UpgradeCard2" parent="UpgradeContainer" instance=ExtResource("14_gxweo")]
+layout_mode = 2
+upgrade = ExtResource("4_q7mf5")
+
+[node name="UpgradeCard3" parent="UpgradeContainer" instance=ExtResource("14_gxweo")]
+layout_mode = 2
+
+[node name="Debug" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Debug"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -134.0
+offset_bottom = 320.0
+grow_horizontal = 0
+
+[node name="Greedy" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+text = "Greedy Upgrades"
+
+[node name="GHealth" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="GDamage" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="GSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="GAttackSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="GProjSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="Player" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+text = "Player Upgrades"
+
+[node name="PHealth" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="PDamage" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="PSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="PAttackSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[node name="PProjSpeed" type="Label" parent="Debug/VBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="UpgradeContainer/UpgradeCard" to="." method="_on_upgrade_box_pressed"]
+[connection signal="pressed" from="UpgradeContainer/UpgradeCard2" to="." method="_on_upgrade_box_2_pressed"]
+[connection signal="pressed" from="UpgradeContainer/UpgradeCard3" to="." method="_on_upgrade_box_3_pressed"]

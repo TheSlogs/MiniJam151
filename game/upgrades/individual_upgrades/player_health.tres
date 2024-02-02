@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://bkxrfoluy03ut"]
+
+[ext_resource type="Script" path="res://game/upgrades/upgrade.gd" id="1_dact1"]
+
+[resource]
+script = ExtResource("1_dact1")
+type = 1
+health = 1
+damage = 0
+speed = 0.0
+attack_speed = 0.0
+projectile_speed = 0.0
+title = "Player Health"
+desc = "Increases player health"

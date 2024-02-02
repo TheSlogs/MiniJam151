@@ -1,13 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmd0x1ht5uvft"]
+[gd_scene load_steps=6 format=3 uid="uid://dmd0x1ht5uvft"]
 
 [ext_resource type="Script" path="res://game/pawn/player/player.gd" id="1_ap1lj"]
 [ext_resource type="Texture2D" uid="uid://cafbwrugyndhu" path="res://Assets/GoodDragon.png" id="2_7x86i"]
+[ext_resource type="Resource" uid="uid://dju0je3mkgp3j" path="res://game/upgrades/player_upgrade.tres" id="2_8vemc"]
+[ext_resource type="Resource" uid="uid://yc77shm6miax" path="res://game/upgrades/greedy_upgrade.tres" id="3_44fpw"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8xn1j"]
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 266
 script = ExtResource("1_ap1lj")
+upgrade = ExtResource("2_8vemc")
 speed = 100.0
+greedy_upgrade = ExtResource("3_44fpw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_8xn1j")

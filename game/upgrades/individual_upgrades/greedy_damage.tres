@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=2 format=3 uid="uid://cefrsus1dluwv"]
+
+[ext_resource type="Script" path="res://game/upgrades/upgrade.gd" id="1_l2rhd"]
+
+[resource]
+script = ExtResource("1_l2rhd")
+type = 0
+health = 0
+damage = 2
+speed = 0.0
+attack_speed = 0.0
+projectile_speed = 0.0
+title = "Greedy Damage"
+desc = "Increases player and enemy damage"
