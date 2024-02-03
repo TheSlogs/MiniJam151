@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjir8pk583kcj"
-path="res://.godot/imported/titlescreenmaybeidk.png-2f4a7e101c248b44eb759bccd06394ca.ctex"
+uid="uid://hoa1462k5kf4"
+path="res://.godot/imported/badder_dragon.png-bf7191c24ea8dcec70a897e075294454.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/titlescreenmaybeidk.png"
-dest_files=["res://.godot/imported/titlescreenmaybeidk.png-2f4a7e101c248b44eb759bccd06394ca.ctex"]
+source_file="res://Assets/dragons/badder_dragon.png"
+dest_files=["res://.godot/imported/badder_dragon.png-bf7191c24ea8dcec70a897e075294454.ctex"]
 
 [params]
 

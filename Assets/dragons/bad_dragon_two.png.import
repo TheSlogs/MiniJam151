@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpmvflbl8cebu"
-path="res://.godot/imported/boss_three.png-02ca13dae2cc8cc38e14f67aae8980d0.ctex"
+uid="uid://d6dtt1fno58r"
+path="res://.godot/imported/bad_dragon_two.png-e4ae85b967b66ce261fba08a6c2a8600.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/boss_three.png"
-dest_files=["res://.godot/imported/boss_three.png-02ca13dae2cc8cc38e14f67aae8980d0.ctex"]
+source_file="res://Assets/dragons/bad_dragon_two.png"
+dest_files=["res://.godot/imported/bad_dragon_two.png-e4ae85b967b66ce261fba08a6c2a8600.ctex"]
 
 [params]
 

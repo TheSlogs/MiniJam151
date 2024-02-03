@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cafbwrugyndhu"
-path="res://.godot/imported/GoodDragon.png-8916dd8ac5f2d6afbe9ba61c6001dfcf.ctex"
+uid="uid://cvrq47yle24c"
+path="res://.godot/imported/bluefireball.png-bff86a9aedf89d254b51d4c0be66bdc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GoodDragon.png"
-dest_files=["res://.godot/imported/GoodDragon.png-8916dd8ac5f2d6afbe9ba61c6001dfcf.ctex"]
+source_file="res://Assets/attacks/bluefireball.png"
+dest_files=["res://.godot/imported/bluefireball.png-bff86a9aedf89d254b51d4c0be66bdc6.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
-roughness/mode=1
+roughness/mode=0
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false
@@ -31,4 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1

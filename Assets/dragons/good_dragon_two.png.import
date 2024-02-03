@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b4gt8rjepp1as"
-path="res://.godot/imported/BadDragon.png-dc9388c74d4df42a6933a08e9f119232.ctex"
+uid="uid://brm15xlatutg6"
+path="res://.godot/imported/good_dragon_two.png-9a0e93b57c53604a07674cbc718ae8f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/BadDragon.png"
-dest_files=["res://.godot/imported/BadDragon.png-dc9388c74d4df42a6933a08e9f119232.ctex"]
+source_file="res://Assets/dragons/good_dragon_two.png"
+dest_files=["res://.godot/imported/good_dragon_two.png-9a0e93b57c53604a07674cbc718ae8f7.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
-roughness/mode=1
+roughness/mode=0
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

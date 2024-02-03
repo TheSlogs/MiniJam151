@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhg0jmbm8x3ph"
-path="res://.godot/imported/boss_two.png-fdc5c6ea714809dc3b61f76c6eeb082f.ctex"
+uid="uid://b4gt8rjepp1as"
+path="res://.godot/imported/BadDragon.png-6c5a03eacc8294e2430548baec1c5a2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/boss_two.png"
-dest_files=["res://.godot/imported/boss_two.png-fdc5c6ea714809dc3b61f76c6eeb082f.ctex"]
+source_file="res://Assets/dragons/BadDragon.png"
+dest_files=["res://.godot/imported/BadDragon.png-6c5a03eacc8294e2430548baec1c5a2b.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
-roughness/mode=0
+roughness/mode=1
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

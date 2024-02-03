@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hoa1462k5kf4"
-path="res://.godot/imported/badder_dragon.png-896ee3da43f020971265eb098d5a02eb.ctex"
+uid="uid://sg4g7bilkkks"
+path="res://.godot/imported/bluefire_one.png-a38e01d0e63b6c24cdd10dfdd74620ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/badder_dragon.png"
-dest_files=["res://.godot/imported/badder_dragon.png-896ee3da43f020971265eb098d5a02eb.ctex"]
+source_file="res://Assets/attacks/bluefire_one.png"
+dest_files=["res://.godot/imported/bluefire_one.png-a38e01d0e63b6c24cdd10dfdd74620ec.ctex"]
 
 [params]
 
