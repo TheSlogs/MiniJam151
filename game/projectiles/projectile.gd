@@ -4,6 +4,7 @@ extends Area2D
 @export var speed : float
 @export var damage : int
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -12,8 +13,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	global_position += transform.x*speed*delta
-	
-	pass
 
 
 func _on_body_entered(body):

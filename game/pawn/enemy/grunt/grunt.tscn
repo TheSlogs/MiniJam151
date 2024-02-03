@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://game/pawn/enemy/grunt/grunt.gd" id="1_xmj6l"]
 [ext_resource type="Resource" uid="uid://yc77shm6miax" path="res://game/upgrades/greedy_upgrade.tres" id="2_u50av"]
-[ext_resource type="Texture2D" uid="uid://b4gt8rjepp1as" path="res://Assets/BadDragon.png" id="3_21ru1"]
+[ext_resource type="Texture2D" uid="uid://b4gt8rjepp1as" path="res://Assets/dragons/BadDragon.png" id="3_21ru1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a4cx0"]
 radius = 16.0

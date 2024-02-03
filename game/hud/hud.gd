@@ -4,6 +4,7 @@ extends Control
 signal start_upgrade
 signal stop_upgrade
 
+
 @export_category("Nodes")
 @export var upgrade_container : HBoxContainer
 @export var card1 : UpgradeCard
@@ -21,7 +22,7 @@ signal stop_upgrade
 func _ready():
 	update_debug()
 	GameManager.connect("start_upgrade", _start_upgrade)
-	connect("stop_upgrade", GameManager._stop_upgrade)
+	GameManager.connect("stop_upgrade", _stop_upgrade)
 
 
 func update_debug():
@@ -38,9 +39,39 @@ func update_debug():
 
 
 func _start_upgrade():
-	print("Start Upgrade")
-	
-	# TODO: set upgrades for the boxes
+	shuffle_cards()
+	upgrade_container.visible = true
+
+
+func _stop_upgrade():
+	upgrade_container.visible = false
+
+
+func _on_upgrade_box_pressed():
+	if GameManager.xp >= 10:
+		card1._on_pressed()
+		update_debug()
+		GameManager.xp -= 10
+		print("Current Money: " + str(GameManager.xp))
+
+
+func _on_upgrade_box_2_pressed():
+	if GameManager.xp >= 10:
+		card2._on_pressed()
+		update_debug()
+		GameManager.xp -= 10
+		print("Current Money: " + str(GameManager.xp))
+
+
+func _on_upgrade_box_3_pressed():
+	if GameManager.xp >= 10:
+		card3._on_pressed()
+		update_debug()
+		GameManager.xp -= 10
+		print("Current Money: " + str(GameManager.xp))
+
+
+func shuffle_cards():
 	upgrade_array.shuffle()
 	card1.upgrade = upgrade_array[0]
 	card2.upgrade = upgrade_array[1]
@@ -50,25 +81,3 @@ func _start_upgrade():
 	card3.update_data()
 	card2.update_data()
 	
-	upgrade_container.visible = true
-
-
-func _on_upgrade_box_pressed():
-	card1._on_pressed()
-	update_debug()
-	upgrade_container.visible = false
-	emit_signal("stop_upgrade")
-
-
-func _on_upgrade_box_2_pressed():
-	card2._on_pressed()
-	update_debug()
-	upgrade_container.visible = false
-	emit_signal("stop_upgrade")
-
-
-func _on_upgrade_box_3_pressed():
-	card3._on_pressed()
-	update_debug()
-	upgrade_container.visible = false
-	emit_signal("stop_upgrade")

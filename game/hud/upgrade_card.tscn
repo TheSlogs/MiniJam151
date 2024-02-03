@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bk1jpk1q6y1ac"]
 
-[ext_resource type="Texture2D" uid="uid://c1ixfp5bk8dxq" path="res://Assets/ui_and_hud/upgrade.png" id="1_urdvs"]
+[ext_resource type="Texture2D" uid="uid://c1ixfp5bk8dxq" path="res://Assets/upgrade.png" id="1_urdvs"]
 [ext_resource type="Script" path="res://game/hud/upgrade_card.gd" id="2_8uh3l"]
 
 [node name="UpgradeCard" type="Button" node_paths=PackedStringArray("title", "desc")]
